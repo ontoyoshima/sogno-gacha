@@ -11,7 +11,7 @@ async function findAffordableMenus(budget){
     return menuList.filter(item => item.price <= budget); // jsの各項目をitemという
 }
 
-// random pick up
+// pick up menu randomly
 async function pickupMenu(budget){
     let tray= [];
     while(budget > 0){
@@ -30,12 +30,17 @@ document.getElementById("priceForm").addEventListener("submit", async function(e
     const price = document.getElementById("price").value; // id=priceが付いてるinput要素を取得し、数値を取得
     const tray = await pickupMenu(price);
     console.log(tray);
-    let resultHTML = "<h2>選ばれたメニュー</h2><ul>";
-    var totalPrice = 0;
+    let resultHTML = `<h2 class="selected-menu">選ばれたメニュー</h2>`;
+    var totalPrice = 0; 
     tray.forEach(menu => {
-        resultHTML += `<li>${menu.name}(${menu.price}円)</li>`; // `${変数}`で変数出力
+        resultHTML += `
+        <div class="menu-item">
+            <sapn class="menu-name">${menu.name}</sapn>
+            <span class="menu-price">(${menu.price}円)</span>
+        </div>`; // `${変数}`で変数出力</span>
         totalPrice += menu.price;
     });
-    resultHTML += `</ul><h3>合計${totalPrice}円</h3>`;
+    resultHTML += `<h2 class="">合計${totalPrice}円</h2>
+                <h3>※価格は全て税込み表記です</h3>`;
     document.getElementById("result").innerHTML = resultHTML; // idが一致しているところのタグを取得。今回の場合<div>。innerHTMLでhtmlファイルのdivタグの中身書き換え。 
 })
