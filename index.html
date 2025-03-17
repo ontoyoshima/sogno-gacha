@@ -3,12 +3,59 @@
 <head>
     <meta charset="utf-8">
     <title>学食ランダムピッカー</title>
+
+    <style>
+        body{
+            text-align: center;
+            background-color: #8FB32D;
+        }
+
+        input{
+            font-size: larger;
+        }
+
+        .yosan{
+            font-size: 20px;
+        }
+
+        .selected-menu{
+            border-bottom: 2px solid black;
+        }
+
+        .menu-item{
+            background-color: #D6E3D4;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+            width:350px;
+            text-align: center;
+        }
+
+        .menu-name{
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .menu-price{
+            font-size: 14px;
+            color: #939393;
+        }
+
+        #result {
+            display: flex;
+            flex-direction: column; /* 縦方向に並べる */
+            align-items: center; /* 水平方向（横）の中央揃え */
+            justify-content: center; /* 垂直方向（縦）の中央揃え */
+        }
+
+    </style>
 </head>
 <body>
     <main>
         <form id = "priceForm"> <!-- form action="hoge.html"でフォームの送信後の移動先を指定-->
             <p>
-                <label for="price">予算を入力してください</label><br> <!-- 1上下キーで選べるようlabelを追加-->
+                <label for="price"><h2 class="yosan">予算を入力してください</h2></label> <!-- 1上下キーで選べるようlabelを追加-->
                 <input type="number" id="price" name="price_val" min="0" required> <!-- labael forの引数とinputのidを一致させることで、labelの文字にポインターを持っていくとinputが光る--> <!-- nameはサーバに送信するときの名前。requiredは非入力を許さない-->
                 <button type="submit">Go</button> <!-- 送信ボタン -->
             </p>
