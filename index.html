@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>学食ランダムピッカー</title>
+</head>
+<body>
+    <main>
+        <form id = "priceForm"> <!-- form action="hoge.html"でフォームの送信後の移動先を指定-->
+            <p>
+                <label for="price">予算を入力してください</label><br> <!-- 1上下キーで選べるようlabelを追加-->
+                <input type="number" id="price" name="price_val" min="0" required> <!-- labael forの引数とinputのidを一致させることで、labelの文字にポインターを持っていくとinputが光る--> <!-- nameはサーバに送信するときの名前。requiredは非入力を許さない-->
+                <button type="submit">Go</button> <!-- 送信ボタン -->
+            </p>
+        </form>
+        <div id="result"></div>
+    </main>
+    
+    <!-- scriptの読み込み -->
+    <script src="js/script.js"></script>
+</body>
+</html>

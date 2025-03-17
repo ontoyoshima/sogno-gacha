@@ -1,0 +1,45 @@
+[
+    {"name": "鶏ポンから揚げ", "price":330, "tags": ["side"]},
+    {"name": "ささみカツ卵とじあんかけ", "price":330, "tags": ["side"]},
+    {"name": "豚肉のヤンニョム炒め", "price":396, "tags": ["side"]},
+    {"name": "鯖のしょうが煮", "price":242, "tags": ["side","always"]},
+    {"name": "チキン竜田香味ねぎソース", "price":462, "tags": ["side"]},
+    {"name": "銀鮭の塩焼き", "price":286, "tags": ["side"]},
+    {"name": "ハンバーグテリヤキペ", "price":330, "tags": ["side"]},
+    {"name": "厚切り旨ひれかつ", "price":396, "tags": ["side"]},
+    {"name": "さばの塩焼き", "price":286, "tags": ["side"]},
+
+    {"name": "五目ひじき煮", "price":88, "tags": ["kobachi"]},
+    {"name": "かぼちゃ煮", "price":99, "tags": ["kobachi","always"]},
+    {"name": "10品目のきんぴら", "price":88, "tags": ["kobachi"]},
+    {"name": "ひじき蓮根煮物きのこ", "price":88, "tags": ["kobachi"]},
+    {"name": "菜の花入り卯の花", "price":88, "tags": ["kobachi"]},
+    {"name": "鶏肉と春雨中華サラダ", "price":88, "tags": ["kobachi"]},
+    {"name": "ささがきごぼうの金平", "price":88, "tags": ["kobachi"]},
+    {"name": "法蓮草", "price":88, "tags": ["kobachi"]},
+
+    {"name": "味噌汁", "price":27, "tags": ["soup","always"]},
+    {"name": "スタミナスープ", "price":66, "tags": ["soup"]},
+    
+    {"name": "ライスSS", "price":null, "tags": ["rice","always"]},
+    {"name": "ライスS", "price":121, "tags": ["rice","always"]},
+    {"name": "ライスM", "price":143, "tags": ["rice","always"]},
+    {"name": "ライスL", "price":null, "tags": ["rice","always"]},
+
+    {"name": "カレーライスS", "price":null, "tags": ["don","always"]},
+    {"name": "カレーライスM", "price":null, "tags": ["don","always"]},
+    {"name": "カレーライスL", "price":null, "tags": ["don","always"]},
+    {"name": "カツカレーライスS", "price":null, "tags": ["don","always"]},
+    {"name": "カツカレーライスM", "price":null, "tags": ["don","always"]},
+    {"name": "カツカレーライスL", "price":null, "tags": ["don","always"]},
+    {"name": "塩だれ鶏天丼S", "price":null, "tags": ["don","always"]},
+    {"name": "塩だれ鶏天丼M", "price":528, "tags": ["don","always"]},
+    {"name": "銀サーモンユッケ丼S", "price":null, "tags": ["don"]},
+    {"name": "銀サーモンユッケ丼M", "price":704, "tags": ["don"]},
+    {"name": "豚塩カルビ焼肉丼S", "price":null, "tags": ["don"]},
+    {"name": "豚塩カルビ焼肉丼M", "price":627, "tags": ["don"]},
+
+    {"name": "白バラ牛乳", "price":132, "tags": ["drink","always"]},
+    {"name": "白バラカフェオレ", "price":132, "tags": ["drink","always"]},
+    {"name": "白バラフルーツオレ", "price":132, "tags": ["drink","always"]}
+]
