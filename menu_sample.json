@@ -42,4 +42,10 @@
     {"name": "白バラ牛乳", "price":132, "tags": ["drink","always"]},
     {"name": "白バラカフェオレ", "price":132, "tags": ["drink","always"]},
     {"name": "白バラフルーツオレ", "price":132, "tags": ["drink","always"]}
+
+    {"name": "", "price":, "tags": [""]},
+    {"name": "", "price":, "tags": [""]},
+    {"name": "", "price":, "tags": [""]},
+    {"name": "", "price":, "tags": [""]},
+    {"name": "", "price":, "tags": [""]},
 ]
