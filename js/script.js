@@ -14,11 +14,17 @@ async function findAffordableMenus(budget){
 // pick up menu randomly
 async function pickupMenu(budget){
     let tray= [];
+    let affordableMenus = await findAffordableMenus(budget);
+    let menuNum = affordableMenus.length;
+    let randomNum = Math.floor(Math.random() * menuNum);
+    tray.push(affordableMenus[randomNum]);
+    budget -= affordableMenus[randomNum].price;
+    
     while(budget > 0){
-        var affordableMenus = await findAffordableMenus(budget); 
-        var menuNum = affordableMenus.length;
+        affordableMenus = affordableMenus.filter(item => item.price <= budget);; 
+        menuNum = affordableMenus.length;
         if (menuNum === 0) break;
-        var randomNum = Math.floor(Math.random() * menuNum);
+        randomNum = Math.floor(Math.random() * menuNum);
         tray.push(affordableMenus[randomNum]);
         budget -= affordableMenus[randomNum].price;
     }
