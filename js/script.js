@@ -49,13 +49,14 @@ document.getElementById("priceForm").addEventListener("submit", async function(e
                 <h3>※価格は全て税込み表記です</h3>`;
     document.getElementById("result").innerHTML = resultHTML; // idが一致しているところのタグを取得。今回の場合<div>。innerHTMLでhtmlファイルのdivタグの中身書き換え。 
 
-    // shareButton表示
+    // appear shareButton
     document.getElementById("tweetButton").style.display = "block";
 
     // delete old EventListener        
     const newButton = document.getElementById("tweetButton");
     newButton.replaceWith(newButton.cloneNode(true));
 
+    // create sentence for share
     document.getElementById("tweetButton").addEventListener("click",function(){
         let text = `🎉 学食ランダムピッカー 🎉\n\n💶予算${price}円\n [Selected Menu]\n`;
         tray.forEach(menu => {
@@ -70,10 +71,3 @@ document.getElementById("priceForm").addEventListener("submit", async function(e
         window.open(twitterUrl,"_blank");
     });
 });
-
-
-//      `🎉 学食ランダムピッカー 🎉\n\n`
-//     + `💰 予算: ${price}円\n`
-//     + `🍽️ 選ばれたメニュー:\n${menuList}\n`
-//     + `💵 合計金額: ${total}円\n`
-//     + `#学食ランダムピッカー`;
