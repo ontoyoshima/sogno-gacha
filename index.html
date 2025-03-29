@@ -25,6 +25,11 @@
             font-size: larger;
         }
 
+        .go{
+            font-size: 18px;
+            padding: 1px 6px;
+        }
+
         .yosan{
             font-size: 22px;
         }
@@ -49,7 +54,7 @@
         }
 
         .menu-price{
-            font-size: 17px;
+            font-size: 16px;
             color: #939393;
         }
 
@@ -80,7 +85,7 @@
             <p>
                 <label for="price"><h2 class="yosan">予算を入力してください</h2></label> <!-- 1上下キーで選べるようlabelを追加-->
                 <input type="number" id="price" name="price_val" min="0" max="10000" required> <!-- labael forの引数とinputのidを一致させることで、labelの文字にポインターを持っていくとinputが光る--> <!-- nameはサーバに送信するときの名前。requiredは非入力を許さない-->
-                <button type="submit">Go</button> <!-- 送信ボタン -->
+                <button type="submit" class="go">Go</button> <!-- 送信ボタン -->
             </p>
         </form>
         <div id="result"></div>
