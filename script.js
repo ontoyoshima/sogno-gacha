@@ -62,12 +62,11 @@ document.getElementById("priceForm").addEventListener("submit", async function(e
         tray.forEach(menu => {
             text+=`✅${menu.name} ${menu.price}円\n`;
         });
-        text += `合計:${totalPrice}円\n #学食ガチャ`;
+        text += `合計:${totalPrice}円\n #学食ガチャ\n`;
 
         let encodedText = encodeURIComponent(text);
         let siteUrl = `https://sogno-gacha.pages.dev`; // 公開URL
-        let twitterUrl = `https://x.com/intent/post?text=${encodedText}`; // }の後ろに&url=${encodeURIComponent(siteUrl)}
-
+        let twitterUrl = `https://x.com/intent/post?text=${encodedText}&url=${encodeURIComponent(siteUrl)}`;
         window.open(twitterUrl,"_blank");
     });
 });
