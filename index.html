@@ -2,6 +2,17 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Xアカウント名">
+    <meta name="twitter:title" content="学食ランダムピッカー">
+    <meta name="twitter:description" content="予算内で学食のメニューをランダムに選んでくれるWebアプリ">
+    <meta name="twitter:image" content="https://www.hoge/ogp.jpg">
+    <meta property="og:url" content="https://www.hoge/index.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="学食ランダムピッカー">
+    <meta property="og:description" content="予算内で学食のメニューをランダムに選んでくれるWebアプリ">
+    <meta property="og:image" content="https://www.hoge/ogp.jpg"> <!-- size:1200*630px is best -->
+
     <title>学食ランダムピッカー</title>
 
     <style>
@@ -15,7 +26,7 @@
         }
 
         .yosan{
-            font-size: 20px;
+            font-size: 22px;
         }
 
         .selected-menu{
@@ -27,7 +38,7 @@
             padding: 5px;
             margin: 5px;
             border-radius: 5px;
-            width:350px;
+            width:370px;
             text-align: center;
         }
 
@@ -38,7 +49,7 @@
         }
 
         .menu-price{
-            font-size: 14px;
+            font-size: 17px;
             color: #939393;
         }
 
@@ -47,6 +58,18 @@
             flex-direction: column; /* 縦方向に並べる */
             align-items: center; /* 水平方向（横）の中央揃え */
             justify-content: center; /* 垂直方向（縦）の中央揃え */
+        }
+
+        #tweetButton{
+            display: block; /* ボタンをブロック要素として扱う。ブロック要素は横幅いっぱいになり、widthを指定しない場合、親要素の幅に合わせる */
+            margin: 20px auto; /* 上下20pxの余白をつけて、左右は自動で中央寄せ */
+            padding: 10px 20px; /* marginは要素の外側に余白、paddingは要素の内側の余白を設定する */
+            font-size: 18px;
+            background-color: #1DA1F2; /* X（旧Twitter）の青色 */
+            color: #FFFFFF;
+            border: none; /* ボタンの枠線を無くす */
+            border-radius: 5px; /* ボタンの角を5px丸くする*/
+            cursor: pointer; /* マウスをボタンに合わせた時にカーソルが変わるようにする*/
         }
 
     </style>
@@ -65,5 +88,6 @@
     
     <!-- scriptの読み込み -->
     <script src="js/script.js"></script>
+    <button id="tweetButton" style="display: none;">Twitter(現X)でシェア</button>
 </body>
 </html>

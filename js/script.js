@@ -35,7 +35,6 @@ document.getElementById("priceForm").addEventListener("submit", async function(e
     event.preventDefault(); // continue action without page reload.通常フォームを送信するとページがリロードされる
     const price = document.getElementById("price").value; // id=priceが付いてるinput要素を取得し、数値を取得
     const tray = await pickupMenu(price);
-    console.log(tray);
     let resultHTML = `<h2 class="selected-menu">選ばれたメニュー</h2>`;
     var totalPrice = 0; 
     tray.forEach(menu => {
@@ -49,4 +48,27 @@ document.getElementById("priceForm").addEventListener("submit", async function(e
     resultHTML += `<h2 class="">合計${totalPrice}円</h2>
                 <h3>※価格は全て税込み表記です</h3>`;
     document.getElementById("result").innerHTML = resultHTML; // idが一致しているところのタグを取得。今回の場合<div>。innerHTMLでhtmlファイルのdivタグの中身書き換え。 
-})
+
+    // shareButton表示
+    document.getElementById("tweetButton").style.display = "block";
+
+    document.getElementById("tweetButton").addEventListener("click",function(){
+        let text = `🎉 学食ランダムピッカー 🎉\n\n💶予算${price}円\n [Selected Menu]\n`;
+        tray.forEach(menu => {
+            text+=`✅${menu.name} ${menu.price}円\n`;
+        });
+        text += `合計:${totalPrice}円\n `;
+
+        let encodedText = encodeURIComponent(text);
+        let siteUrl = ``; // 公開URL
+        let twitterUrl = `https://x.com/intent/post?text=${encodedText}`; // }の後ろに&url=${encodeURIComponent(siteUrl)}
+
+        window.open(twitterUrl,"_blank");
+    });
+});
+
+//      `🎉 学食ランダムピッカー 🎉\n\n`
+//     + `💰 予算: ${price}円\n`
+//     + `🍽️ 選ばれたメニュー:\n${menuList}\n`
+//     + `💵 合計金額: ${total}円\n`
+//     + `#学食ランダムピッカー`;
