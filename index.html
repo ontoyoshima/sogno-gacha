@@ -13,6 +13,16 @@
     <meta property="og:description" content="予算内で学食のメニューをランダムに選んでくれるWebアプリ">
     <meta property="og:image" content="https://sogno-gacha.pages.dev/food.png"> <!-- size:1200*630px is best -->
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CCXVB2RF4C"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CCXVB2RF4C');
+    </script>
+
     <title>学食ガチャ</title>
 
     <style>
@@ -85,6 +95,10 @@
             cursor: pointer; /* マウスをボタンに合わせた時にカーソルが変わるようにする*/
         }
 
+        a{
+            color: blue;
+        }
+
     </style>
 </head>
 <body>
@@ -102,6 +116,13 @@
     <!-- scriptの読み込み -->
     <script src="script.js"></script>
     <button id="tweetButton" style="display: none;">Twitter(現X)でシェア</button>
+    <h3>プライバシーポリシー</h3>
+    <p>当サイトでは、サイトの利用状況の調査や分析ために Google Analytics を使用しています。</p>
+    <p>Google Analytics は、Cookie を使用してトラフィックデータを収集しますが、個人を特定する情報は含まれません。</p>
+    <p>詳しくは、<a href="https://policies.google.com/technologies/partner-sites?hl=ja">Google のポリシー</a>をご覧ください。</p> 
+    <p>ユーザーは本サイトを利用することでcookieの使用に許可を与えたものとみなします。</p>
+    <p>Google Analyticsによるデータ利用を無効するには<a href="https://tools.google.com/dlpage/gaoptout?hl=ja">Google Analyticsオプトアウトアドオン</a>をご利用ください。</p>
+    
     <h3>注意</h3>
     <p>※これは非公式サイトです</p>
     <p>不具合・間違いや要望等：<a href="https://docs.google.com/forms/d/e/1FAIpQLSckIs23pTuplnDpdtlJUL2FXP7Oq3HaJgCebNml8x0n_zQ4pA/viewform?usp=header">Google Form</a></p>
