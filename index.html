@@ -32,20 +32,21 @@
         }
 
         input{
-            font-size: larger;
+            font-size: 60px;
         }
 
         .go{
-            font-size: 18px;
+            font-size: 60px;
             padding: 1px 6px;
         }
 
         .yosan{
-            font-size: 22px;
+            font-size: 40px;
         }
 
         .selected-menu{
             border-bottom: 2px solid black;
+            font-size: 70px
         }
 
         .menu-item{
@@ -53,12 +54,12 @@
             padding: 5px;
             margin: 5px;
             border-radius: 5px;
-            width:370px;
+            width:700px;
             text-align: center;
         }
 
         .menu-name{
-            font-size: 20px;
+            font-size: 40px;
             color: black;
             font-weight: bold;
         }
@@ -70,10 +71,12 @@
 
         .total{
             margin-bottom: 0px;
+            font-size: 60px;
         }
 
         .zeikomi{
             margin-top: 2px;
+            font-size: 25px;
         }
 
         #result {
@@ -87,7 +90,7 @@
             display: block; /* ボタンをブロック要素として扱う。ブロック要素は横幅いっぱいになり、widthを指定しない場合、親要素の幅に合わせる */
             margin: 20px auto; /* 上下20pxの余白をつけて、左右は自動で中央寄せ */
             padding: 10px 20px; /* marginは要素の外側に余白、paddingは要素の内側の余白を設定する */
-            font-size: 18px;
+            font-size: 50px;
             background-color: #1DA1F2; /* X（旧Twitter）の青色 */
             color: #FFFFFF;
             border: none; /* ボタンの枠線を無くす */
@@ -99,6 +102,13 @@
             color: blue;
         }
 
+        h2{
+            font-size: 40px;
+        }
+
+        h3{
+            font-size: 30px
+        }
     </style>
 </head>
 <body>
@@ -106,25 +116,30 @@
         <form id = "priceForm"> <!-- form action="hoge.html"でフォームの送信後の移動先を指定-->
             <p>
                 <label for="price"><h2 class="yosan">予算を入力してください</h2></label> <!-- 1上下キーで選べるようlabelを追加-->
-                <input type="number" id="price" name="price_val" min="0" max="10000" required> <!-- labael forの引数とinputのidを一致させることで、labelの文字にポインターを持っていくとinputが光る--> <!-- nameはサーバに送信するときの名前。requiredは非入力を許さない-->
+                <input type="number" id="price" name="price_val" min="22" max="10000" required> <!-- labael forの引数とinputのidを一致させることで、labelの文字にポインターを持っていくとinputが光る--> <!-- nameはサーバに送信するときの名前。requiredは非入力を許さない-->
                 <button type="submit" class="go">Go</button> <!-- 送信ボタン -->
             </p>
         </form>
         <div id="result"></div>
+        <div id="total"></div>
+        <h3 class="zeikomi">※価格は全て税込み表記です</h3>
     </main>
     
     <!-- scriptの読み込み -->
     <script src="script.js"></script>
     <button id="tweetButton" style="display: none;">Twitter(現X)でシェア</button>
-    <h3>プライバシーポリシー</h3>
-    <p>当サイトでは、サイトの利用状況の調査や分析ために Google Analytics を使用しています。</p>
-    <p>Google Analytics は、Cookie を使用してトラフィックデータを収集しますが、個人を特定する情報は含まれません。</p>
-    <p>詳しくは、<a href="https://policies.google.com/technologies/partner-sites?hl=ja">Google のポリシー</a>をご覧ください。</p> 
-    <p>ユーザーは本サイトを利用することでcookieの使用に許可を与えたものとみなします。</p>
-    <p>Google Analyticsによるデータ利用を無効するには<a href="https://tools.google.com/dlpage/gaoptout?hl=ja">Google Analyticsオプトアウトアドオン</a>をご利用ください。</p>
-    
-    <h3>注意</h3>
-    <p>※これは非公式サイトです</p>
-    <p>不具合・間違いや要望等：<a href="https://docs.google.com/forms/d/e/1FAIpQLSckIs23pTuplnDpdtlJUL2FXP7Oq3HaJgCebNml8x0n_zQ4pA/viewform?usp=header">Google Form</a></p>
+    <br>
+    <div class="sonota">
+        <h3>プライバシーポリシー</h3>
+        <p>当サイトでは、サイトの利用状況の調査や分析ためにGoogle Analytics を使用しています。</p>
+        <p>Google Analytics は、Cookie を使用してトラフィックデータを収集しますが、個人を特定する情報は含まれません。</p>
+        <p>詳しくは、<a href="https://policies.google.com/technologies/partner-sites?hl=ja">Google のポリシー</a>をご覧ください。</p> 
+        <p>ユーザーは本サイトを利用することでcookieの使用に許可を与えたものとみなします。</p>
+        <p>Google Analyticsによるデータ利用を無効するには<a href="https://tools.google.com/dlpage/gaoptout?hl=ja">Google Analyticsオプトアウトアドオン</a>をご利用ください。</p>
+        
+        <h3>注意</h3>
+        <p>※当サイトはミールプランに囚われた製作者がノリと勢いで作成したwebアプリであり、島根大学生活協同組合及び生協食堂や島根大学と関係ありません。</p>
+        <p>不具合・間違いや要望等：<a href="https://docs.google.com/forms/d/e/1FAIpQLSckIs23pTuplnDpdtlJUL2FXP7Oq3HaJgCebNml8x0n_zQ4pA/viewform?usp=header">Google Form</a></p>
+    </div>
 </body>
 </html>
