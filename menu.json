@@ -69,7 +69,7 @@
     {"name": "焼き豚ラーメン", "price":539, "tags": ["men","always"]},
     {"name": "担々麺", "price":473, "tags": ["men","always"]},
 
-    {"name": "白バラ牛流アイスバー2層仕立て","price":160,"tags":["ice"]},
+    {"name": "白バラ牛乳アイスバー2層仕立て","price":160,"tags":["ice"]},
     {"name": "大山おいしい牛乳モナカ","price":160,"tags":["ice"]},
     {"name": "大山おいしい珈琲モナカ","price":160,"tags":["ice"]},
     {"name": "大山おいしいあずきモナカ","price":160,"tags":["ice"]},
