@@ -45,10 +45,9 @@ document.getElementById("priceForm").addEventListener("submit", async function(e
         </div>`; // `${変数}`で変数出力</span>
         totalPrice += menu.price;
     });
-    resultHTML += `<h2 class="total">合計${totalPrice}円</h2>
-                <h3 class="zeikomi">※価格は全て税込み表記です</h3>`;
+    let totalHTML = `<h2 class="total">合計${totalPrice}円</h2>`;
     document.getElementById("result").innerHTML = resultHTML; // idが一致しているところのタグを取得。今回の場合<div>。innerHTMLでhtmlファイルのdivタグの中身書き換え。 
-
+    document.getElementById("total").innerHTML = totalHTML;
     // appear shareButton
     document.getElementById("tweetButton").style.display = "block";
 
