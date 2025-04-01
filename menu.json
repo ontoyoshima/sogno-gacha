@@ -19,10 +19,8 @@
     {"name": "西京焼き", "price":308, "tags": ["side"]},
     {"name": "鯖のしょうが煮", "price":242, "tags": ["side","always"]},
 
-
     {"name": "かぼちゃ煮", "price":99, "tags": ["kobachi","always"]},
     {"name": "法蓮草", "price":88, "tags": ["kobachi"]},
-    {"name": "柚子づくし春雨サラダ", "price":88, "tags": ["kobachi"]},
     {"name": "法蓮草ともやしのナムル", "price":88, "tags": ["kobachi"]},
     {"name": "巣ごもりたまご", "price":99, "tags": ["kobachi"]},
     {"name": "大学芋", "price":110, "tags": ["kobachi"]},
@@ -35,6 +33,7 @@
     {"name": "青菜と切り干し大根の煮物", "price":88, "tags": ["kobachi"]},
     {"name": "パンナコッタMIXベリー", "price":165, "tags": ["kobachi"]},
     {"name": "ハムとチーズのポテトサラダ", "price":99, "tags": ["kobachi"]},
+    {"name": "ささがきごぼうの金平", "price":88, "tags": ["kobachi"]},
 
     {"name": "味噌汁", "price":27, "tags": ["soup","always"]},
     {"name": "スタミナスープ", "price":88, "tags": ["soup"]},
