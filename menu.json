@@ -16,8 +16,9 @@
     {"name": "鶏唐揚げカシューナッツ", "price":209, "tags": ["side"]},
     {"name": "銚子鯖の竜田揚げ", "price":209, "tags": ["side"]},
     {"name": "<お好み焼き風>たこキャベツカツ", "price":198, "tags": ["side"]},
-    {"name": "西京焼き", "price":308, "tags": ["side"]},
-    {"name": "鯖のしょうが煮", "price":242, "tags": ["side","always"]},
+    {"name": "銀ひらすの西京焼き", "price":308, "tags": ["side"]},
+    {"name": "男爵チーズもち", "price":154, "tags": ["side"]},
+    {"name": "国産鯖の味噌煮", "price":242, "tags": ["side"]},
 
     {"name": "かぼちゃ煮", "price":99, "tags": ["kobachi","always"]},
     {"name": "法蓮草", "price":88, "tags": ["kobachi"]},
@@ -25,7 +26,6 @@
     {"name": "巣ごもりたまご", "price":99, "tags": ["kobachi"]},
     {"name": "大学芋", "price":110, "tags": ["kobachi"]},
     {"name": "とうふ", "price":66, "tags": ["kobachi"]},
-    {"name": "ぶどうのゼリーナタデココ入り", "price":132, "tags": ["kobachi"]},
     {"name": "フルーチェヨーグルト", "price":132, "tags": ["kobachi"]},
     {"name": "だし巻きたまご", "price":121, "tags": ["kobachi"]},
     {"name": "枝豆入りひじき煮", "price":88, "tags": ["kobachi"]},
@@ -34,6 +34,7 @@
     {"name": "パンナコッタMIXベリー", "price":165, "tags": ["kobachi"]},
     {"name": "ハムとチーズのポテトサラダ", "price":99, "tags": ["kobachi"]},
     {"name": "ささがきごぼうの金平", "price":88, "tags": ["kobachi"]},
+    {"name": "フルーチェミックスベリー", "price":143, "tags": ["kobachi"]},
 
     {"name": "味噌汁", "price":27, "tags": ["soup","always"]},
     {"name": "スタミナスープ", "price":88, "tags": ["soup"]},

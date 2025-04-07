@@ -16,6 +16,7 @@
     {"name": "チキン南蛮", "price":374, "tags": ["side"]},
     {"name": "いかの唐揚げ", "price":176, "tags": ["side"]},
     {"name": "フランク＆ポテト", "price":187, "tags": ["side"]},
+    {"name": "男爵チーズもち", "price":154, "tags": ["side"]},
 
     {"name": "五目ひじき煮", "price":88, "tags": ["kobachi"]},
     {"name": "10品目のきんぴら", "price":88, "tags": ["kobachi"]},
@@ -117,7 +118,7 @@
     {"name": "白バラフルーツオレ", "price":132, "tags": ["drink","always"]}
     {"name": "鳥取大山のむヨーグルト","price":132,"tags":["drink","always"]}
 
-    {"name": "男爵チーズもち", "price":, "tags": ["side"]},
+    
     {"name": "", "price":, "tags": [""]},
     {"name": "", "price":, "tags": [""]},
     {"name": "", "price":, "tags": [""]},
