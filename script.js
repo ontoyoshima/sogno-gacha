@@ -66,6 +66,10 @@ document.getElementById("priceForm").addEventListener("submit", async function(e
         let encodedText = encodeURIComponent(text);
         let siteUrl = `https://sogno-gacha.pages.dev`; // 公開URL
         let twitterUrl = `https://x.com/intent/post?text=${encodedText}&url=${encodeURIComponent(siteUrl)}`;
-        window.open(twitterUrl,"_blank");
+        const a = document.createElement("a");
+        a.href = twitterUrl;
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+        a.click();
     });
 });
